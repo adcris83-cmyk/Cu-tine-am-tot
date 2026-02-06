@@ -99,12 +99,120 @@
 </div>
 
 <script>
+    const text = `> INIȚIALIZARE CONEXIUNE: Targu Mureș... Socuéllamos 
+> SE ÎNCARCĂ MEMORIA... [DONE]
+> ANALIZĂ STRUCTURĂ: FIBRA INIMII... [STABILĂ]
+> EROARE: DISTANȚĂ DETECTATĂ. 
+> SOLUȚIE: SCULPTURĂ ÎN COD.
+> INTRODU RĂSPUNSUL PENTRU A CONTINUA...<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3009km | Proiectul Rezonanță</title>
+    <style>
+        :root {
+            --verde-crud: #adff2f;
+            --lemn-inchis: #2d1b0d;
+            --lemn-textura: #3e2712;
+        }
+
+        body {
+            background-color: var(--lemn-inchis);
+            color: var(--verde-crud);
+            font-family: 'Courier New', monospace;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            overflow: hidden;
+            /* Textura de lemn subtila pe fundal */
+            background-image: repeating-linear-gradient(45deg, rgba(0,0,0,0.1) 0px, rgba(0,0,0,0.1) 2px, transparent 2px, transparent 4px);
+        }
+
+        #terminal {
+            width: 90%;
+            max-width: 800px;
+            background: rgba(0, 0, 0, 0.85);
+            padding: 30px;
+            border: 2px solid var(--verde-crud);
+            box-shadow: 0 0 20px rgba(173, 255, 47, 0.2);
+            position: relative;
+            z-index: 10;
+        }
+
+        .cursor {
+            display: inline-block;
+            width: 10px;
+            height: 20px;
+            background: var(--verde-crud);
+            animation: blink 0.8s infinite;
+        }
+
+        @keyframes blink { 50% { opacity: 0; } }
+
+        input {
+            background: transparent;
+            border: none;
+            border-bottom: 2px solid var(--verde-crud);
+            color: var(--verde-crud);
+            font-family: inherit;
+            font-size: 1.2rem;
+            outline: none;
+            width: 100%;
+            margin-top: 20px;
+            padding: 5px;
+        }
+
+        #video-container {
+            display: none;
+            margin-top: 20px;
+        }
+
+        .wood-frame {
+            border: 15px solid #5d4037;
+            border-image: url('https://www.transparenttextures.com/patterns/wood-pattern-with-twigs.png');
+            box-shadow: inset 0 0 10px #000;
+        }
+
+        #canvas-chips {
+            position: absolute;
+            top: 0; left: 0;
+            pointer-events: none;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+
+<canvas id="canvas-chips"></canvas>
+
+<div id="terminal">
+    <div id="typewriter"></div>
+    <div id="input-area" style="display:none;">
+        <p>> STATUS: Așteptare cheie decriptare (material: lemn)...</p>
+        <input type="text" id="passkey" autocomplete="off" placeholder="Scrie aici și apasă ENTER...">
+    </div>
+    
+    <div id="video-container">
+        <h3>ACCES CONFIRMAT. DISTANȚA: 0km</h3>
+        <div class="wood-frame">
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+        <p style="margin-top:15px;">"Disfruto cada milímetro de ti..."</p>
+    </div>
+</div>
+
+<script>
     const text = `> INIȚIALIZARE CONEXIUNE: BUCUREȘTI -> 3009KM...
 > SE ÎNCARCĂ MEMORIA... [DONE]
 > ANALIZĂ STRUCTURĂ: FIBRA INIMII... [STABILĂ]
 > EROARE: DISTANȚĂ DETECTATĂ. 
 > SOLUȚIE: SCULPTURĂ ÎN COD.
-> INTRODU RĂSPUNSUL SQL PENTRU A CONTINUA...`;
+> INTRODU RĂSPUNSUL SQL PENTRU A CONTINUA...
+        Introdu cifrele momentului în care 'misiunea' a devenit oficială și distanța a încetat să mai fie o barieră. `;
+
 
     let i = 0;
     const speed = 50;
